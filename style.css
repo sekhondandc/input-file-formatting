@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    font-family: 'Open Sans',sans-serif;
+}
+.field-group{
+    width: auto;
+}
+.file-field{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+}
+.file-label{
+    padding: 10px 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #229144;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.file-label i{
+    margin-right: 5px;
+}
+.file-field:focus + .file-label,
+.file-label:hover{
+    color: #0ac744;
+}
+
+
+/* Border Style*/
+.file-label.border{
+    border: 2px solid #229144;
+}
+.file-field:focus + .file-label.border,
+.file-label.border:hover{
+    border-color: #0ac744;
+}
+
+
+/*Background Style*/
+.file-label.background{
+    background: #229144;
+    color: #ffffff;
+}
+.file-field:focus + .file-label.background,
+.file-label.background:hover{
+    background: #0ac744;
+    color: #ffffff;
+}
